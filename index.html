@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #ffffff22;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        form ul {
+            list-style: none;
+            padding: 0;
+        }
+        form ul li {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        input[type="submit"]:hover {
+            background-color: lightgray;
+        }
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img.png" height="100px" width="100px" alt="Profile Picture">
+    <h1>MY FEEDBACK FORM</h1>
+
+    <form>
+        <ul>
+            <li>Name: <input type="text" required minlength="2" maxlength="50"></li>
+            <li>Email: <input type="email" required></li>
+            <li>Phone Number: <input type="number" required min="20" max="40" step="2"></li>
+            <li>Password: <input type="password"></li>
+            <li>State: <input type="text" value="Abia" readonly disabled></li>
+            <li>Search: <input type="search"></li>
+            <li>For Dropdown: 
+                <input type="text" list="cities">
+                <datalist id="cities">
+                    <option>Lagos</option>
+                    <option>Abuja</option>
+                    <option>Abia</option>
+                    <option>Ogun</option>
+                    <option>Kano</option>
+                </datalist>
+            </li>
+        </ul>
+        <ul>
+            <li><label for="emotions"><b>Please check all the emotions that apply to you:</b></label></li>
+            <li>Angry<input name="emotions" type="checkbox" value="Angry"></li>
+            <li>Sad<input name="emotions" type="checkbox" value="Sad"></li>
+            <li>Happy<input name="emotions" type="checkbox" value="Happy"></li>
+            <li>Ambivalent<input name="emotions" type="checkbox" value="Ambivalent"></li>
+        </ul>
+        <ul>
+            <li><label for="Satisfaction"><b>How satisfied were you with our service:</b></label></li>
+            <li><input name="Satisfaction" type="radio" value="Very"> Very Satisfied</li>
+            <li><input name="Satisfaction" type="radio" value="Satisfied"> Satisfied</li>
+            <li><input name="Satisfaction" type="radio" value="Didn't care"> Didn't care</li>
+            <li><input name="Satisfaction" type="radio" value="Dissatisfied"> Dissatisfied</li>
+            <li><input name="Satisfaction" type="radio" value="Very Dissatisfied"> Very Dissatisfied</li>
+        </ul>
+        <ul>
+            <li>Further Comments: <textarea name="Comments"></textarea></li>
+        </ul>
+        <ul>
+            <li>Bio Photo: <input type="file" name="file"></li>
+        </ul>
+        <ul>
+            <li>Birthday: <input type="date" name="birthday"></li>
+        </ul>
+        <ul>
+            <li>Location:</li>
+            <select>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                <option value="Norway">Norway</option>
+            </select>
+        </ul>
+        <input type="submit" value="Submit Feedback">
+    </form>
+    <p>&copy; Eagletech - All rights Reserved</p>
+</body>
+
+</html>
